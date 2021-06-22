@@ -185,6 +185,7 @@ function logicalOperation() {
 
 // logicalOperation();
 
+
 // 6. Conditional Operators:
 // it is also called ternary operator.
 //it assigns a value according to the conditions.
@@ -196,11 +197,57 @@ function condOperation() {
 
     let canVote = (age > 18) ? "Eligible" : "Not Eligible";
     // console.log(canVote);
+
+    let canJoin = (age > 18 && age < 21) ? "Yes" : "No";
+    console.log(canJoin);
 }
 
 // condOperation();
 
 
-
 // 7. Type Operators:
+// returns the type of a variable
+
+function typeOperation() {
+    let x = "Hello";
+    let y = typeof(x);
+    // console.log(y);
+
+}
+
+// typeOperation();
+
+
 // 8. Bitwise Operators:
+// Bitwise operators run on 32 bit numbers
+// So, it convert the 64bits number into 32 bits number and performed operation
+// after operation, the result is converted into 64bits javascript numbers
+
+// Bitwise AND(&)
+// sets 1 when both bit are 1 else sets 0
+
+// 1 => 00000001
+// 2 => 00000010
+// R => 00000000 => 0
+// console.log(1 & 2);
+
+// Bitwise OR(|)
+// sets 1 when anyone of the bits is 1 else sets 0
+
+// 5 => 00000101
+// 6 => 00000110
+// R => 00000111 => 7
+// console.log(5 | 6);
+
+//Bitwise XOR(^)
+// sets 1 when only one of the two bits is 1 else sets 0
+
+// 2 => 00000010
+// 3 => 00000011
+// R => 00000001 => 1
+// console.log(2 ^ 3);
+
+// Bitwise NOT(~)
+// invert all bits
+// difficult to understand
+// I am skipping this

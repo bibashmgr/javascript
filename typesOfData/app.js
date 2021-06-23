@@ -13,6 +13,14 @@ if (x > y) {
     // console.log("y is greater");
 }
 
+// JavaScript evaluates expressions from left to right. 
+// Different sequences can produce different results:
+let v = 16 + 4 + "Volvo";
+// console.log(v);
+
+let w = "Volvo" + 16 + 4;
+// console.log(w);
+
 // js has dynamic types.
 // types of data in js:
 
@@ -21,19 +29,82 @@ if (x > y) {
 let a = 21;
 let b = typeof(a);
 
-console.log(b);
+// console.log(b);
 
 let c = 35.5;
 let d = typeof(c);
-console.log(d);
+// console.log(d);
+
+let firstNum = 123e4; // e indicates exponential notation
+// console.log(firstNum);
+// returns 1230000
+
+let lastNum = 123e-4;
+// console.log(lastNum);
+// returns 0.0123
+
+
 // b. String
+
+let e = "Hello World";
+let f = typeof(e);
+// console.log(f);
+
+let g = "";
+let h = typeof(g);
+// console.log(h);
+
+let answer1 = "It's alright";
+// console.log(answer1);
+
+let answer2 = 'He is called "Johnny"';
+// console.log(answer2);
+
+
 // c. Boolean
+// boolean has two valuse: true or false;
+
+let fNum = 5;
+let sNum = 6;
+let thNum = 6;
+let resultOne = (fNum == sNum);
+let resultTwo = (sNum == thNum);
+// console.log(resultOne);
+// console.log(resultTwo);
+
+
 // d. Undefined
+
+let unknownVar;
+// console.log(typeof(unknownVar));
+
 // e. Null
 
+// let hisAge = ;
+// console.log(typeof(hisAge));
+// shows syntax error
+
+let hisName = "";
+// console.log(typeof(hisName));
+// returns string
+
 // 2. Non-primitive data type
+
 // a. Array
+//syntax:
+// variablename = [value1, value2, ...];
+
+const cars = ["Saab", "Volvo", "BMW"];
+// console.log(typeof(cars));
+// js shows array as object
+
 // b. Object
+// syntax:
+// variablename = { name1:value1, name2:value2, ... };
+
+const person = { firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue" };
+// console.log(typeof(person));
+// returns object
 
 // c. Function
 function myFunction() {
@@ -42,3 +113,4 @@ function myFunction() {
 
 let z = typeof(myFunction);
 // console.log(z);
+// returns function
